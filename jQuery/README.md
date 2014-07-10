@@ -21,6 +21,9 @@
 
 ---------
 
+###Basics
+
+
 ###Resources
 1. http://www.w3schools.com/jquery [ W3 Schools]
 2. http://www.javaworld.com/article/2078613/java-web-development/6-reasons-you-should-be-using-jquery.html
