@@ -1,4 +1,4 @@
-#**jQuery - Getting started ** 
+# **jQuery - Getting started**
 
 
 ----------
