@@ -30,7 +30,7 @@ Thus, Node.js is really two things: a runtime environment and a library.
 In order to make use of these, you need to install Node.js. Instead of repeating the process here, I kindly ask you to visit the official installation instructions. Please come back once you are up and running.
 
 
-Intstalling Node js
+Installing Node js
 --------------------------------
 Install the dependencies:
 
@@ -57,8 +57,8 @@ Open your favorite editor and create a file called helloworld.js. We want it to 
 Save the file, and execute it through Node.js:
 
     node helloworld.js
-    
-    
+
+
 
 A hello world http server
 -------------------------
@@ -89,7 +89,7 @@ Introduction to npm
 
 Installing npm
 Installation of node.js should install npm.
-You can check if npm is installed by 
+You can check if npm is installed by
 Checking npm version
 
 npm -v

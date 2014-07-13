@@ -18,6 +18,6 @@ Latest version of HTML is HTML 5 which comes with a lot of new stuffs which redu
 ##HTML 5 Basics
 
 ----------
-###Resorces 
+###Resources
 * http://www.w3schools.com/html/html_intro.asp [w3schools]
 * http://en.wikipedia.org/wiki/HTML [wikipedia]
