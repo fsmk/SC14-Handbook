@@ -1,9 +1,9 @@
 # Summary
 
-* [Introduction to Free Software Movement](introduction to_free_software_movement/free_software_movement.md)
-   * [History](introduction to_free_software_movement/history.md)
-   * [About GLUGs](introduction to_free_software_movement/about_glugs.md)
-   * [About other activities](introduction_to_free_software_movement/about_other_activities.md)
+* [Introduction to Free Software Movement Karnataka](introduction_to_free_software_movement/free_software_movement.md)
+   * [History](introduction_to_free_software_movement/history.md)
+   * [About GLUGs](introduction_to_free_software_movement/about_glugs.md)
+   * [About other chapters](introduction_to_free_software_movement/about_other_chapters.md)
    * [Reading Material about Free Software](introduction_to_free_software_movement/reading_material_about_free_software.md)
 * [Using Ubuntu](using_ubuntu/README.md)
    * [Exercises](using_ubuntu/exercises.md)
