@@ -1,6 +1,7 @@
 CACHE MANIFEST
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Revision 1405003047650
 =======
 # Revision 1404763919912
@@ -8,11 +9,13 @@ CACHE MANIFEST
 =======
 # Revision 1405003047650
 >>>>>>> Added HTML exercises
+=======
+# Revision 1405283184729
+>>>>>>> Added latest PRs to the web
 
 CACHE:
-introduction to_free_software_movement/about_glugs.html
-introduction to_free_software_movement/free_software_movement.html
-introduction to_free_software_movement/history.html
+integrating_mongodb_with_nodejs_application/README.html
+integrating_mongodb_with_nodejs_application/exercises.html
 index.html
 basic_command_line_in_linux/README.html
 basic_command_line_in_linux/exercises.html
@@ -22,16 +25,15 @@ css/README.html
 css/exercises.html
 html/README.html
 html/exercises.html
-integrating_mongodb_with_nodejs_application/README.html
-integrating_mongodb_with_nodejs_application/exercises.html
-introduction_to_free_software_movement/about_other_activities.html
+introduction_to_free_software_movement/about_glugs.html
+introduction_to_free_software_movement/about_other_chapters.html
+introduction_to_free_software_movement/free_software_movement.html
+introduction_to_free_software_movement/history.html
 introduction_to_free_software_movement/reading_material_about_free_software.html
 introduction_to_nodejs/README.html
 introduction_to_nodejs/exercises.html
 javascript/README.html
 javascript/exercises.html
-jquery/README.html
-jquery/exercises.html
 mongodb/README.html
 mongodb/exercises.html
 road_ahead/README.html
