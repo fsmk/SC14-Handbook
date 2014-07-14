@@ -1,5 +1,5 @@
 # **Using Ubuntu**
-It is assumed that you have made a fresh install of Ubuntu 14.10 before going ahead with this guide. If not, please check [here][1] for installation procedure.  
+It is assumed that you have made a fresh install of Ubuntu 14.04 before going ahead with this guide. If not, please check [here][1] for installation procedure.  
 Now that you've installed Linux's most friendly desktop operating system, lets get started.
 
 Some alternatives which may come in handy for you:
@@ -39,6 +39,7 @@ A text-editor is the one where you type out your code and create source code fil
 
 Using Geany is fairly simple and you can check out detailed instructions [here][9].
 
+The official documentation on how to use Ubuntu can be found [here][10].
 
 And you're done.
 
@@ -51,3 +52,4 @@ And you're done.
   [7]: https://help.ubuntu.com/community/UsingTheTerminal#In_Unity
   [8]: http://www.geany.org/
   [9]: http://www.geany.org/manual/current/
+  [10]: http://ubuntuguide.org/images/UbuntuguideTrusty_Pt1.pdf
