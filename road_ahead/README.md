@@ -32,7 +32,7 @@ Since all of what you learn and "hack" are usually free and open source, it beco
 
 *"Bidi Bidi Bit BIdi,*
 *Company Software Bit Bidi!*
-*Tagoli Tagoli TAgoli*
+*Tagoli Tagoli TAgoli,*
 *Free Software Tagoli!"*
 
 
