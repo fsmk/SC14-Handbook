@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Revision 1405449161719
+# Revision 1405449557978
 
 CACHE:
 integrating_mongodb_with_nodejs_application/README.html
@@ -22,6 +22,8 @@ introduction_to_nodejs/README.html
 introduction_to_nodejs/exercises.html
 javascript/README.html
 javascript/exercises.html
+jquery/README.html
+jquery/exercises.html
 mongodb/README.html
 mongodb/exercises.html
 road_ahead/README.html

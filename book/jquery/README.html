@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Exercises | SC14-Handbook</title>
+        <title>Jquery | SC14-Handbook</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 0.5.2">
@@ -19,10 +19,10 @@
     <meta name="author" content="fsmk">
     
     
-    <link rel="next" href="../html/README.html" />
+    <link rel="next" href="../jquery/exercises.html" />
     
     
-    <link rel="prev" href="../shell_scripting/README.html" />
+    <link rel="prev" href="../javascript/exercises.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="fsmk/SC14-Handbook" data-level="4.1" data-basepath=".." data-revision="1405449557977">
+    <div class="book" data-github="fsmk/SC14-Handbook" data-level="8" data-basepath=".." data-revision="1405449557977">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -118,7 +118,7 @@
         
         
         <li>
-            <a href="https://github.com/fsmk/SC14-Handbook/edit/master/shell_scripting/exercises.md" target="blank" class="contribute-link">Edit and Contribute</a>
+            <a href="https://github.com/fsmk/SC14-Handbook/edit/master/jquery/README.md" target="blank" class="contribute-link">Edit and Contribute</a>
         </li>
         
 
@@ -495,7 +495,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 36.666666666666664%;min-width: 33.333333333333336%;"></div>
+        <div class="inner" style="width: 60%;min-width: 56.666666666666664%;"></div>
     </div>
     <div class="chapters">
     
@@ -523,19 +523,19 @@
     
         <a href="../shell_scripting/exercises.html" title="Exercises" class="chapter done " data-progress="4.1" style="left: 36.666666666666664%;"></a>
     
-        <a href="../html/README.html" title="HTML" class="chapter  new-chapter" data-progress="5" style="left: 40%;"></a>
+        <a href="../html/README.html" title="HTML" class="chapter done new-chapter" data-progress="5" style="left: 40%;"></a>
     
-        <a href="../html/exercises.html" title="Exercises" class="chapter  " data-progress="5.1" style="left: 43.333333333333336%;"></a>
+        <a href="../html/exercises.html" title="Exercises" class="chapter done " data-progress="5.1" style="left: 43.333333333333336%;"></a>
     
-        <a href="../css/README.html" title="CSS" class="chapter  new-chapter" data-progress="6" style="left: 46.666666666666664%;"></a>
+        <a href="../css/README.html" title="CSS" class="chapter done new-chapter" data-progress="6" style="left: 46.666666666666664%;"></a>
     
-        <a href="../css/exercises.html" title="Exercises" class="chapter  " data-progress="6.1" style="left: 50%;"></a>
+        <a href="../css/exercises.html" title="Exercises" class="chapter done " data-progress="6.1" style="left: 50%;"></a>
     
-        <a href="../javascript/README.html" title="Javascript" class="chapter  new-chapter" data-progress="7" style="left: 53.333333333333336%;"></a>
+        <a href="../javascript/README.html" title="Javascript" class="chapter done new-chapter" data-progress="7" style="left: 53.333333333333336%;"></a>
     
-        <a href="../javascript/exercises.html" title="Exercises" class="chapter  " data-progress="7.1" style="left: 56.666666666666664%;"></a>
+        <a href="../javascript/exercises.html" title="Exercises" class="chapter done " data-progress="7.1" style="left: 56.666666666666664%;"></a>
     
-        <a href="../jquery/README.html" title="Jquery" class="chapter  new-chapter" data-progress="8" style="left: 60%;"></a>
+        <a href="../jquery/README.html" title="Jquery" class="chapter done new-chapter" data-progress="8" style="left: 60%;"></a>
     
         <a href="../jquery/exercises.html" title="Exercises" class="chapter  " data-progress="8.1" style="left: 63.333333333333336%;"></a>
     
@@ -566,42 +566,58 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_60">
+                    <section class="normal" id="section-gitbook_44">
                     
-                        <p><strong>EXERCISE TIME</strong></p>
-<p>Okay cool. Now that you&#39;ve learnt so much about shell scripting ( Yeah, I know it was boring ) , it&#39;s time to put that knowledge that you acquired into something substantial. </p>
-<p>So lets test ourselves and see how strong we are in shell scripting. </p>
-<p>Psst. Dont worry , the volunteers are here to help you out. </p>
-<p><strong>Question 1 )</strong> How to write shell script that will add two nos, which are supplied as command line argument, and if this two nos are not given show error and its usage</p>
-<p><strong>Question 2 ) </strong> Write Script to find out biggest number from given three nos. Nos are supplies as command line argument. Print error if sufficient arguments are not supplied.</p>
-<p><strong>Question 3 ) </strong> Write Script, using case statement to perform basic math operation as
-follows</p>
+                        <h1 id="-jquery-getting-started-"><strong>jQuery - Getting started</strong></h1>
+<hr>
+<h3 id="contents">Contents</h3>
+<ol>
+<li>[About jQuery][1]</li>
+<li>[Pre-requisites][2]</li>
+<li>[Setup][3]</li>
+<li>[Selectors][4]</li>
+<li>[Effects][5]</li>
+<li>[Custom animation][6]</li>
+<li>[Method chaining][7]</li>
+<li>[DOM manipulation][8]</li>
+<li>[Events][9]</li>
+<li>[Traversing][10]</li>
+<li>[Ajax Part 1][11]</li>
+<li>[Ajax Part 2][12]</li>
+<li>[Complete list of selectors][13]</li>
+<li>[Complete list of event methods][14]</li>
+</ol>
+<hr>
+<h3 id="what-is-jquery-">What is jQuery?</h3>
 <ul>
-<li>addition</li>
-<li>subtraction
-x multiplication
-/ division</li>
+<li>jQuery is a JavaScript Library.</li>
+<li>jQuery greatly simplifies JavaScript programming.</li>
 </ul>
-<p>Cool. So now that you&#39;ve worked them out. Lets actually see how good your scripting was. </p>
-<p>And if you werent able to solve it, dont freak out. It happens to be every budding programmer. The more you try, the better you learn</p>
-<p>Here are the answers to the questions above. Dont refer them if you have not tried the questions.</p>
-<p>[Solution to Question 1][1]</p>
-<p>[Solution to Question 2][2]</p>
-<p>[Solution to Question 3][3]</p>
-<p>A few more exercises maybe ?</p>
-<p><strong>Question 4 )</strong>
-Write script to print given number in reverse order, for eg. If no is 123 it must print as 321.</p>
-<p><strong>Question 5 )</strong>
-Write script to print given numbers sum of all digit, For eg. If no is 123 it&#39;s sum of all digit will be 1+2+3 = 6.</p>
-<p>Solutions : </p>
-<p>[Question 4][4]</p>
-<p>[Question 5][5]</p>
-<p>Did you have a nice time solving these ? Dying to learn more about shell script ? </p>
-<p>Well. Here are a few links that will help you </p>
-<p>Keep learning.</p>
-<p><a href="http://www.freeos.com/guides/lsst/ch08.html" target="_blank">http://www.freeos.com/guides/lsst/ch08.html</a>
-<a href="http://www-h.eng.cam.ac.uk/help/tpl/unix/scripts/node16.html" target="_blank">http://www-h.eng.cam.ac.uk/help/tpl/unix/scripts/node16.html</a>
-<a href="http://parallel.vub.ac.be/documentation/linux/unixdoc_download/exercises/Scripts.Ex.html" target="_blank">http://parallel.vub.ac.be/documentation/linux/unixdoc_download/exercises/Scripts.Ex.html</a></p>
+<hr>
+<h3 id="why-use-jquery-">Why use jQuery?</h3>
+<ul>
+<li>It makes things easier and faster to develop which is good when you are in production project where time matters a lot.</li>
+<li>Developers find jQuery intuitive and easy to learn -- this library is built on shorter, simpler code, after all.</li>
+<li>Meanwhile, jQuery uses a combination of CSS, HTML, JavaScript, and AJAX. These are all markup-based technologies that are meant to work well together.</li>
+<li>You can achieve great-looking effects that will keep your audience engaged.</li>
+<li>Finally, jQuery is SEO (Search Engine Optimization) friendly and CSS3 compliant.</li>
+</ul>
+<hr>
+<h3 id="pre-requisites">Pre-requisites</h3>
+<ol>
+<li>HTML</li>
+<li>CSS</li>
+<li>JS</li>
+</ol>
+<hr>
+<h3 id="resources">Resources</h3>
+<ol>
+<li>[W3 Schools][15]</li>
+<li>[Official documentation - jQuery][16]</li>
+<li>[Demos- jQuery][17]</li>
+</ol>
+<hr>
+<p>And, you&#39;re done!</p>
 
                     
                     </section>
@@ -611,10 +627,10 @@ Write script to print given numbers sum of all digit, For eg. If no is 123 it&#3
         </div>
 
         
-        <a href="../shell_scripting/README.html" class="navigation navigation-prev " aria-label="Previous page: Shell Scripting"><i class="fa fa-angle-left"></i></a>
+        <a href="../javascript/exercises.html" class="navigation navigation-prev " aria-label="Previous page: Exercises"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../html/README.html" class="navigation navigation-next " aria-label="Next page: HTML"><i class="fa fa-angle-right"></i></a>
+        <a href="../jquery/exercises.html" class="navigation navigation-next " aria-label="Next page: Exercises"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
