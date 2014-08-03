@@ -1,0 +1,684 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Introduction to NodeJS | SC14-Handbook</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.5.2">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="fsmk">
+    
+    
+    <link rel="next" href="../introduction_to_nodejs/exercises.html" />
+    
+    
+    <link rel="prev" href="../jquery/exercises.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-github="fsmk/SC14-Handbook" data-level="9" data-basepath=".." data-revision="1407089650813">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/fsmk/SC14-Handbook" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/fsmk/SC14-Handbook/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/fsmk/SC14-Handbook/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >SC14-Handbook</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        <li>
+            <a href="https://github.com/fsmk" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/fsmk/SC14-Handbook/issues" target="blank"class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/fsmk/SC14-Handbook/edit/master/introduction_to_nodejs/README.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+    
+        <li class="chapter " data-level="1" data-path="introduction_to_free_software_movement/free_software_movement.html">
+            
+            <a href="../introduction_to_free_software_movement/free_software_movement.html">
+                <i class="fa fa-check"></i> <b>1.</b> Introduction to Free Software Movement Karnataka
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="introduction_to_free_software_movement/history.html">
+            
+            <a href="../introduction_to_free_software_movement/history.html">
+                <i class="fa fa-check"></i> <b>1.1.</b> History
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introduction_to_free_software_movement/about_glugs.html">
+            
+            <a href="../introduction_to_free_software_movement/about_glugs.html">
+                <i class="fa fa-check"></i> <b>1.2.</b> About GLUGs
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="introduction_to_free_software_movement/about_other_chapters.html">
+            
+            <a href="../introduction_to_free_software_movement/about_other_chapters.html">
+                <i class="fa fa-check"></i> <b>1.3.</b> About other chapters
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="introduction_to_free_software_movement/reading_material_about_free_software.html">
+            
+            <a href="../introduction_to_free_software_movement/reading_material_about_free_software.html">
+                <i class="fa fa-check"></i> <b>1.4.</b> Reading Material about Free Software
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="using_ubuntu/README.html">
+            
+            <a href="../using_ubuntu/README.html">
+                <i class="fa fa-check"></i> <b>2.</b> Using Ubuntu
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="using_ubuntu/exercises.html">
+            
+            <a href="../using_ubuntu/exercises.html">
+                <i class="fa fa-check"></i> <b>2.1.</b> Exercises
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="basic_command_line_in_linux/README.html">
+            
+            <a href="../basic_command_line_in_linux/README.html">
+                <i class="fa fa-check"></i> <b>3.</b> Basic Command Line in linux
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="basic_command_line_in_linux/exercises.html">
+            
+            <a href="../basic_command_line_in_linux/exercises.html">
+                <i class="fa fa-check"></i> <b>3.1.</b> Exercises
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="shell_scripting/README.html">
+            
+            <a href="../shell_scripting/README.html">
+                <i class="fa fa-check"></i> <b>4.</b> Shell Scripting
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="shell_scripting/exercises.html">
+            
+            <a href="../shell_scripting/exercises.html">
+                <i class="fa fa-check"></i> <b>4.1.</b> Exercises
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="html/README.html">
+            
+            <a href="../html/README.html">
+                <i class="fa fa-check"></i> <b>5.</b> HTML
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="html/exercises.html">
+            
+            <a href="../html/exercises.html">
+                <i class="fa fa-check"></i> <b>5.1.</b> Exercises
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="css/README.html">
+            
+            <a href="../css/README.html">
+                <i class="fa fa-check"></i> <b>6.</b> CSS
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="css/exercises.html">
+            
+            <a href="../css/exercises.html">
+                <i class="fa fa-check"></i> <b>6.1.</b> Exercises
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="javascript/README.html">
+            
+            <a href="../javascript/README.html">
+                <i class="fa fa-check"></i> <b>7.</b> Javascript
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="javascript/exercises.html">
+            
+            <a href="../javascript/exercises.html">
+                <i class="fa fa-check"></i> <b>7.1.</b> Exercises
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="jquery/README.html">
+            
+            <a href="../jquery/README.html">
+                <i class="fa fa-check"></i> <b>8.</b> Jquery
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="jquery/exercises.html">
+            
+            <a href="../jquery/exercises.html">
+                <i class="fa fa-check"></i> <b>8.1.</b> Exercises
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="introduction_to_nodejs/README.html">
+            
+            <a href="../introduction_to_nodejs/README.html">
+                <i class="fa fa-check"></i> <b>9.</b> Introduction to NodeJS
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="introduction_to_nodejs/exercises.html">
+            
+            <a href="../introduction_to_nodejs/exercises.html">
+                <i class="fa fa-check"></i> <b>9.1.</b> Exercises
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="using_express_nodejs/README.html">
+            
+            <a href="../using_express_nodejs/README.html">
+                <i class="fa fa-check"></i> <b>10.</b> Using Express NodeJS
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="using_express_nodejs/exercises.html">
+            
+            <a href="../using_express_nodejs/exercises.html">
+                <i class="fa fa-check"></i> <b>10.1.</b> Exercises
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="mongodb/README.html">
+            
+            <a href="../mongodb/README.html">
+                <i class="fa fa-check"></i> <b>11.</b> Introduction to MongoDB
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1" data-path="mongodb/exercises.html">
+            
+            <a href="../mongodb/exercises.html">
+                <i class="fa fa-check"></i> <b>11.1.</b> Exercises
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="integrating_mongodb_with_nodejs_application/README.html">
+            
+            <a href="../integrating_mongodb_with_nodejs_application/README.html">
+                <i class="fa fa-check"></i> <b>12.</b> Integrating MongoDB with NodeJS application
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="12.1" data-path="integrating_mongodb_with_nodejs_application/exercises.html">
+            
+            <a href="../integrating_mongodb_with_nodejs_application/exercises.html">
+                <i class="fa fa-check"></i> <b>12.1.</b> Exercises
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="circumventing_mass_surveillance/README.html">
+            
+            <a href="../circumventing_mass_surveillance/README.html">
+                <i class="fa fa-check"></i> <b>13.</b> Circumventing Mass surveillance
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="13.1" data-path="circumventing_mass_surveillance/exercises.html">
+            
+            <a href="../circumventing_mass_surveillance/exercises.html">
+                <i class="fa fa-check"></i> <b>13.1.</b> Exercises
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="road_ahead/README.html">
+            
+            <a href="../road_ahead/README.html">
+                <i class="fa fa-check"></i> <b>14.</b> Road Ahead
+            </a>
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 66.66666666666667%;min-width: 63.333333333333336%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../introduction_to_free_software_movement/free_software_movement.html" title="Introduction to Free Software Movement Karnataka" class="chapter done new-chapter" data-progress="1" style="left: 3.3333333333333335%;"></a>
+    
+        <a href="../introduction_to_free_software_movement/history.html" title="History" class="chapter done " data-progress="1.1" style="left: 6.666666666666667%;"></a>
+    
+        <a href="../introduction_to_free_software_movement/about_glugs.html" title="About GLUGs" class="chapter done " data-progress="1.2" style="left: 10%;"></a>
+    
+        <a href="../introduction_to_free_software_movement/about_other_chapters.html" title="About other chapters" class="chapter done " data-progress="1.3" style="left: 13.333333333333334%;"></a>
+    
+        <a href="../introduction_to_free_software_movement/reading_material_about_free_software.html" title="Reading Material about Free Software" class="chapter done " data-progress="1.4" style="left: 16.666666666666668%;"></a>
+    
+        <a href="../using_ubuntu/README.html" title="Using Ubuntu" class="chapter done new-chapter" data-progress="2" style="left: 20%;"></a>
+    
+        <a href="../using_ubuntu/exercises.html" title="Exercises" class="chapter done " data-progress="2.1" style="left: 23.333333333333332%;"></a>
+    
+        <a href="../basic_command_line_in_linux/README.html" title="Basic Command Line in linux" class="chapter done new-chapter" data-progress="3" style="left: 26.666666666666668%;"></a>
+    
+        <a href="../basic_command_line_in_linux/exercises.html" title="Exercises" class="chapter done " data-progress="3.1" style="left: 30%;"></a>
+    
+        <a href="../shell_scripting/README.html" title="Shell Scripting" class="chapter done new-chapter" data-progress="4" style="left: 33.333333333333336%;"></a>
+    
+        <a href="../shell_scripting/exercises.html" title="Exercises" class="chapter done " data-progress="4.1" style="left: 36.666666666666664%;"></a>
+    
+        <a href="../html/README.html" title="HTML" class="chapter done new-chapter" data-progress="5" style="left: 40%;"></a>
+    
+        <a href="../html/exercises.html" title="Exercises" class="chapter done " data-progress="5.1" style="left: 43.333333333333336%;"></a>
+    
+        <a href="../css/README.html" title="CSS" class="chapter done new-chapter" data-progress="6" style="left: 46.666666666666664%;"></a>
+    
+        <a href="../css/exercises.html" title="Exercises" class="chapter done " data-progress="6.1" style="left: 50%;"></a>
+    
+        <a href="../javascript/README.html" title="Javascript" class="chapter done new-chapter" data-progress="7" style="left: 53.333333333333336%;"></a>
+    
+        <a href="../javascript/exercises.html" title="Exercises" class="chapter done " data-progress="7.1" style="left: 56.666666666666664%;"></a>
+    
+        <a href="../jquery/README.html" title="Jquery" class="chapter done new-chapter" data-progress="8" style="left: 60%;"></a>
+    
+        <a href="../jquery/exercises.html" title="Exercises" class="chapter done " data-progress="8.1" style="left: 63.333333333333336%;"></a>
+    
+        <a href="../introduction_to_nodejs/README.html" title="Introduction to NodeJS" class="chapter done new-chapter" data-progress="9" style="left: 66.66666666666667%;"></a>
+    
+        <a href="../introduction_to_nodejs/exercises.html" title="Exercises" class="chapter  " data-progress="9.1" style="left: 70%;"></a>
+    
+        <a href="../using_express_nodejs/README.html" title="Using Express NodeJS" class="chapter  " data-progress="10" style="left: 73.33333333333333%;"></a>
+    
+        <a href="../using_express_nodejs/exercises.html" title="Exercises" class="chapter  " data-progress="10.1" style="left: 76.66666666666667%;"></a>
+    
+        <a href="../mongodb/README.html" title="Introduction to MongoDB" class="chapter  " data-progress="11" style="left: 80%;"></a>
+    
+        <a href="../mongodb/exercises.html" title="Exercises" class="chapter  " data-progress="11.1" style="left: 83.33333333333333%;"></a>
+    
+        <a href="../integrating_mongodb_with_nodejs_application/README.html" title="Integrating MongoDB with NodeJS application" class="chapter  " data-progress="12" style="left: 86.66666666666667%;"></a>
+    
+        <a href="../integrating_mongodb_with_nodejs_application/exercises.html" title="Exercises" class="chapter  " data-progress="12.1" style="left: 90%;"></a>
+    
+        <a href="../circumventing_mass_surveillance/README.html" title="Circumventing Mass surveillance" class="chapter  " data-progress="13" style="left: 93.33333333333333%;"></a>
+    
+        <a href="../circumventing_mass_surveillance/exercises.html" title="Exercises" class="chapter  " data-progress="13.1" style="left: 96.66666666666667%;"></a>
+    
+        <a href="../road_ahead/README.html" title="Road Ahead" class="chapter  " data-progress="14" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_67">
+                    
+                        <p>![Introduction to Node.js][1]</p>
+<h1 id="introduction-to-node-js">Introduction to Node.js</h1>
+<p>Node.js is a runtime environment and a library for running applications written in JavaScript outside the browser (for example, on the server).</p>
+<p>Node.js applications are designed to maximize throughput and efficiency, using non-blocking I/O and asynchronous events. Node.js applications run single-threaded, although Node.js uses multiple threads for file and network events. Node.js is commonly used for real time applications due to its asynchronous nature, allowing applications to display information faster for users without the need for refreshing.</p>
+<h2 id="development">Development</h2>
+<p>Node.js has a developer community primarily centered on two mailing lists and the IRC channel #node.js on freenode. The community gathers at NodeConf, an annual developer conference focused on Node.js.
+Node.js is currently used by a number of large companies including Groupon, SAP,LinkedIn,Microsoft,Yahoo!,Walmart and PayPal.</p>
+<h2 id="server-side-javascript">Server-side JavaScript</h2>
+<p>The first incarnations of JavaScript lived in browsers. But this is just the context. It defines what you can do with the language, but it doesn&#39;t say much about what the language itself can do. JavaScript is a &quot;complete&quot; language: you can use it in many contexts and achieve everything with it you can achieve with any other &quot;complete&quot; language.</p>
+<p>Node.js really is just another context: it allows you to run JavaScript code in the backend, outside a browser.</p>
+<p>In order to execute the JavaScript you intend to run in the backend, it needs to be interpreted and, well, executed. This is what Node.js does, by making use of Google&#39;s V8 VM, the same runtime environment for JavaScript that Google Chrome uses.</p>
+<p>Plus, Node.js ships with a lot of useful modules, so you don&#39;t have to write everything from scratch, like for example something that outputs a string on the console.</p>
+<p>Thus, Node.js is really two things: a runtime environment and a library.</p>
+<p>In order to make use of these, you need to install Node.js. Instead of repeating the process here, I kindly ask you to visit the official installation instructions. Please come back once you are up and running.</p>
+<h2 id="installing-node-js">Installing Node js</h2>
+<p>Install the dependencies:</p>
+<p>sudo apt-get install g++ curl libssl-dev apache2-utils
+sudo apt-get install git-core</p>
+<p>Run the following commands:</p>
+<pre><code>ubuntu_setup.sh
+git clone git://github.com/ry/node.git
+cd node
+./configure
+make
+sudo make install
+</code></pre><p>You can refer [Building and installing Node.js][2]</p>
+<p>To test if it works run the hello world program
+Open your favorite editor and create a file called helloworld.js. We want it to write &quot;Hello World&quot; to STDOUT, and here is the code needed to do that:`</p>
+<pre><code>console.log(&quot;Hello World&quot;);
+</code></pre><p>Save the file, and execute it through Node.js:</p>
+<pre><code>node helloworld.js
+</code></pre><h2 id="a-hello-world-http-server">A hello world http server</h2>
+<p>Now printing hello world to a terminal isn&#39;t all that exciting. Let&#39;s take the next step and write a program that responds to hello world via http. We&#39;ll call the file &#39;hello_http.js&#39; and put the following code into it:</p>
+<pre><code> var http = require(&#39;http&#39;);
+ var server = http.createServer(function(req, res) {
+ res.writeHead(200);
+ res.end(&#39;Hello Http&#39;);
+ });
+ server.listen(8080);
+</code></pre><p>Now run this program from the terminal by typing:</p>
+<pre><code>$ node hello_http.js
+</code></pre><p>The first thing you&#39;ll notice is that this program, unlike our first one, doesn&#39;t exit right away. That&#39;s because a node program will always run until it&#39;s certain that no further events are possible. In this case the open http server is the source of events that will keep things going.</p>
+<p>Testing the server is as simple as opening a new browser tab, and navigating to the following url: <a href="http://localhost:8080/" target="_blank">http://localhost:8080/</a>. As expected, you should see a response that reads: &#39;Hello Http&#39;.</p>
+<p>Alternatively, you could also open up a new terminal and use curl to test your server:</p>
+<pre><code>$ curl localhost:8080
+</code></pre><p>Hello Http</p>
+<h2 id="introduction-to-npm">Introduction to npm</h2>
+<p>Installing npm
+Installation of node.js should install npm.
+You can check if npm is installed by
+Checking npm version</p>
+<p>npm -v
+Outputs</p>
+<p>1.4.3[Or whcihever latest version is available]
+If it is not installed refer the link [introduction to npm][3]</p>
+<h2 id="frameworks">Frameworks</h2>
+<p>Express</p>
+<p>At this point express is probably the go-to framework for most node.js developers. It&#39;s relatively mature, and includes the connect (think rack) middleware layer. Included in the package are routing, configuration, a template engine, POST parsing and many other features.</p>
+<p>While express is a solid framework, it&#39;s currently addressing a much smaller scope than fullstack frameworks like Rails, CakePHP or Django. It&#39;s more comparable to Sinatra, and unfortunately doesn&#39;t really make a big effort to differentiate itself from its Ruby roots into something that feels natural in JavaScript. Anyhow, short of writing your own framework, it&#39;s certainly a great choice at this point.</p>
+<h2 id="resources">Resources</h2>
+<p>Videos
+[Crackford videos][4]
+[Lynda videos][5]
+Books
+[Professional node.js][6]
+[Learning node][7]
+Tutorials
+[Codeschool][8]
+Mailing list
+[Node.js_mailing_list][9]</p>
+<p>  References
+ [Wikipedia][10]
+ [Nodeguide][11]
+ [Beginning node][12]</p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../jquery/exercises.html" class="navigation navigation-prev " aria-label="Previous page: Exercises"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../introduction_to_nodejs/exercises.html" class="navigation navigation-next " aria-label="Next page: Exercises"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
